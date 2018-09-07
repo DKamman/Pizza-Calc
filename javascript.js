@@ -13,12 +13,13 @@ var small 	= prompt("Typ hier de hoeveelheid Small pizza's naar voorkeur.\nSmall
 var medium 	= prompt("Typ hier de hoeveelheid Medium pizza's naar voorkeur.\nMedium pizza's zijn 26cm in doorsnee en 7,50 euro per stuk.");
 var large 	= prompt("Typ hier de hoeveelheid Large pizza's naar voorkeur.\nLarge pizza's zijn 30cm in doorsnee en 13 euro per stuk.");
 
-//Deze var waardes berekenen de prijs * de hoeveelheid gekozen pizza's:
+//Deze var waardes berekenen de prijs keer de hoeveelheid gekozen pizza's:
 var totSmall 	= (SMALLPRICE / 100) * small;
 var totMedium 	= (MEDIUMPRICE / 100) * medium;
 var totLarge 	= (LARGEPRICE / 100) * large
 var totSub 		= totLarge + totMedium + totSmall
 
+//Dit weergeeft de uitgerekende prijzen per pizza keuze en het totale van alle gekozen pizza's
 document.write("Dank u wel voor het gebruik maken van onze Pizza service bij Panuchi's Pizza's.");
 document.write("<br>" + "<br>" + "Uw keuze." + 
 						   "<br>" + "Small Pizza's €5 (22cm): " 	+ small 	+ "<br>" + " Kosten: €" + totSmall.toFixed(2)
